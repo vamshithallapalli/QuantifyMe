@@ -1,0 +1,19 @@
+.chart-wrapper {
+  width: 95%;
+  display: flex;               /* side by side */
+  justify-content: space-between;
+  gap: 2rem;                   /* space between charts */
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-color);
+  flex-wrap: wrap;             /* wrap on smaller screens */
+}
+
+.chart-wrapper > div {
+  flex: 1 1 45%;                     /* take equal space */
+  min-width: 300px;            /* prevent being too small */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

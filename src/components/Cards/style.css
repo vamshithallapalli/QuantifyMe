@@ -1,0 +1,21 @@
+.my-card {
+  box-shadow: var(--shadow-color);
+  margin: 1rem;
+  border-radius: 0.5rem;
+  min-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  flex: 1;
+}
+
+.my-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.my-card p {
+  margin: 0;
+}
