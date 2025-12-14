@@ -40,7 +40,7 @@ QuantifyMe is a personal finance web application that helps users track income a
   - Sorting by date and amount  
   - Global search  
   - Category-based filtering for income and expenses
-![Transactions](Screenshots/TransactionTablePage.png)
+  - ![Transactions](Screenshots/TransactionTablePage.png)
 
 ### 📁 CSV Import & Export
 - Export transactions as CSV files  
