@@ -17,7 +17,7 @@ QuantifyMe is a personal finance web application that helps users track income a
 - Secure user authentication using Firebase Authentication  
 - Supports Google OAuth and Email/Password authentication  
 - Users can sign up, log in, and log out securely  
-
+- [LoginPage](screenshots/LoginPage.png)
 ---
 
 ## 📊 Features
@@ -33,7 +33,8 @@ QuantifyMe is a personal finance web application that helps users track income a
 ### 📈 Data Visualization
 - Interactive dashboards built using Ant Design Charts  
 - Bar charts to visualize income trends  
-- Pie charts to show expense distribution  
+- Pie charts to show expense distribution
+- ![Charts](screenshots/ChartsPage.png)
 
 ### 📋 Transactions Table
 - Display all transactions in a structured table  
@@ -47,7 +48,7 @@ QuantifyMe is a personal finance web application that helps users track income a
 - Export transactions as CSV files  
 - Import CSV files to re-upload transaction data  
 - Real-time rendering of imported data in tabular format  
-
+- [!Dashboard](screenshots/DashboardPage.png)
 ---
 
 ## 🧩 Architecture
