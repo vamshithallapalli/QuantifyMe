@@ -1,70 +1,71 @@
-# Personal Finance Tracker Project
+# 💰 QuantifyMe – Personal Finance Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QuantifyMe is a personal finance web application that helps users track income and expenses, visualize spending patterns, and manage financial data efficiently through an intuitive dashboard.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
+- Frontend: React.js, JavaScript  
+- UI Library: Ant Design  
+- Charts: Ant Design Charts  
+- Backend & Authentication: Firebase (Authentication & Firestore)  
+- Deployment: Vercel  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔐 Authentication
+- Secure user authentication using Firebase Authentication  
+- Supports Google OAuth and Email/Password authentication  
+- Users can sign up, log in, and log out securely  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📊 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💳 Financial Management
+- Add and manage income and expense transactions  
+- Automatic calculation of:
+  - Current Balance  
+  - Total Income  
+  - Total Expenses  
 
-### `npm run build`
+### 📈 Data Visualization
+- Interactive dashboards built using Ant Design Charts  
+- Bar charts to visualize income trends  
+- Pie charts to show expense distribution  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📋 Transactions Table
+- Display all transactions in a structured table  
+- Features include:
+  - Sorting by date and amount  
+  - Global search  
+  - Category-based filtering for income and expenses  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📁 CSV Import & Export
+- Export transactions as CSV files  
+- Import CSV files to re-upload transaction data  
+- Real-time rendering of imported data in tabular format  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧩 Architecture
+- Component-based React architecture  
+- Clean separation of concerns  
+- Reusable and scalable UI components  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 User Experience
+- Dashboard cards displaying current balance, total income, and total expenses  
+- Responsive and user-friendly interface  
+- Real-time updates for transactions and charts  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌐 Live Demo
+https://quantify-me-delta.vercel.app/
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Author
+Vamshi Thallapalli
