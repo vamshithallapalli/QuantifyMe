@@ -194,7 +194,11 @@ const SignupSigninComponent = () => {
               Or Don't Have An Account?{" "}
               <span
                 onClick={() => setLoginForm(!loginForm)}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                  color: "var(--theme)",
+                }}
               >
                 Click Here
               </span>
@@ -253,7 +257,11 @@ const SignupSigninComponent = () => {
               Or Have An Account Already?{" "}
               <span
                 onClick={() => setLoginForm(!loginForm)}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                  color: "var(--theme)",
+                }}
               >
                 Click Here
               </span>

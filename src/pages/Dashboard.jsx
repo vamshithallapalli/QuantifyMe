@@ -6,10 +6,17 @@ import AddExpense from "../components/Modals/AddExpense";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../firebase";
 import { toast } from "react-toastify";
-import { collection, addDoc, query, getDocs } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  query,
+  getDocs,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 import TransactionsTable from "../components/TransactionsTable";
 import ChartComponent from "../components/Charts";
-import { Empty } from "antd";
+import { Empty, notification } from "antd";
 
 const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
@@ -112,6 +119,38 @@ const Dashboard = () => {
     return new Date(a.date) - new Date(b.date);
   });
 
+  const handleResetBalance = async () => {
+    if (!user) return;
+
+    try {
+      const transactionsRef = collection(db, `users/${user.uid}/transactions`);
+      const snapshot = await getDocs(transactionsRef);
+
+      // 🔥 Delete all documents
+      const deletePromises = snapshot.docs.map((docSnap) =>
+        deleteDoc(doc(db, `users/${user.uid}/transactions`, docSnap.id))
+      );
+
+      await Promise.all(deletePromises);
+
+      // Clear local state
+      setTransactions([]);
+      setIncome(0);
+      setExpense(0);
+
+      notification.success({
+        message: "Balance Reset",
+        description: "All transactions have been permanently deleted.",
+        duration: 3,
+      });
+    } catch (error) {
+      notification.error({
+        message: "Reset Failed",
+        description: "Could not reset balance. Please try again.",
+      });
+    }
+  };
+
   return (
     <div>
       <Header />
@@ -125,6 +164,7 @@ const Dashboard = () => {
             totalBalance={totalBalance}
             showExpenseModal={showExpenseModal}
             showIncomeModal={showIncomeModal}
+            onResetBalance={handleResetBalance}
           />
           {transactions.length !== 0 ? (
             <ChartComponent sortedTransactions={sortedTransactions} />
