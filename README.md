@@ -27,7 +27,8 @@ QuantifyMe is a personal finance web application that helps users track income a
 - Automatic calculation of:
   - Current Balance  
   - Total Income  
-  - Total Expenses  
+  - Total Expenses
+  - ![DislayingCards](screenshots/BalanceCardPage.png)
 
 ### 📈 Data Visualization
 - Interactive dashboards built using Ant Design Charts  
